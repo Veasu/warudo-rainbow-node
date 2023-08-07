@@ -29,7 +29,6 @@ namespace veasu.rainbow
 
     private float NormalPingPong(float length, float pingPongPeriod = 1f)
     {
-      Debug.Log(pingPongPeriod);
       float time = Time.time;
       float mod = time % pingPongPeriod;
       float result = (mod < pingPongPeriod / 2f) ? mod : pingPongPeriod - mod;
